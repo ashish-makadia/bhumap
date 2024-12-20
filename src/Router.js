@@ -1,4 +1,4 @@
-import { BrowserRouter, Navigate, Route, Routes, Switch } from 'react-router-dom';
+import { BrowserRouter, Route, Routes} from 'react-router-dom';
 import HomeC from './component/homeC';
 import Home from './container/home';
 import Marketplace from './container/marketplace';
