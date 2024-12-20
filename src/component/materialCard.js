@@ -1,4 +1,4 @@
-import { Image } from "react-bootstrap";
+import { Button, Image } from "react-bootstrap";
 
 
 const MaterialCard = ({ category }) => {
@@ -8,6 +8,7 @@ const MaterialCard = ({ category }) => {
       <h2>{category.name}</h2>
       <p class="symbol"><img style={{width:"100px"}} src={category.image} alt=""/></p>
       <p>{category.description}</p>
+      {/* <Button variant="outline-dark">View Products</Button> */}
       </div>
       {/* <article class="card">
                 <div class="card__img">
