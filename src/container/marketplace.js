@@ -1,60 +1,7 @@
-import { useCallback, useRef, useState } from "react";
-import { FormControl, Image } from "react-bootstrap";
-import { Link } from "react-router-dom";
 import Header from "./header";
 import MaterialCard from "../component/materialCard";
 
 function Marketplace() {
-  const [categories, setCategories] = useState([
-    {
-      _id:"safwu832heijn9d32",
-      name:"dddd"
-    },
-    {
-      _id:"safwu832heijn9d32",
-      name:"dddd"
-    },
-    {
-      _id:"safwu832heijn9d32",
-      name:"dddd"
-    },
-    {
-      _id:"safwu832heijn9d32",
-      name:"dddd"
-    },
-    {
-      _id:"safwu832heijn9d32",
-      name:"dddd"
-    },
-    {
-      _id:"safwu832heijn9d32",
-      name:"dddd"
-    },
-    {
-      _id:"safwu832heijn9d32",
-      name:"dddd"
-    },
-    {
-      _id:"safwu832heijn9d32",
-      name:"dddd"
-    },
-    {
-      _id:"safwu832heijn9d32",
-      name:"dddd"
-    },
-    {
-      _id:"safwu832heijn9d32",
-      name:"dddd"
-    },
-    {
-      _id:"safwu832heijn9d32",
-      name:"dddd"
-    },
-    {
-      _id:"safwu832heijn9d32",
-      name:"dddd"
-    }
-]);
 
 const items = [
   { id: 1, name: "Tiles", title:"test1",description:"test description", image:"https://img.icons8.com/?size=100&id=21936&format=png&color=000000" },
@@ -85,24 +32,6 @@ const items = [
          <MaterialCard category={item} />
       ))}
     </main>
-      {/* <div className="category2-box">
-      <h1 className="heading">A WIDE RANGE OF BUILDING MATERIALS</h1>
-      <ul>
-        {categories?.map((category, index) => (
-          <li key={index}>
-            <Link href={`/products/${category._id}`}>
-              <Image
-                src="https://icons.veryicon.com/png/o/commerce-shopping/e-commerce-icon-4/category-49.png"
-                alt={category.name}
-                width={40}
-                height={40}
-              />
-              {category.name}
-            </Link>
-          </li>
-        ))}
-      </ul>
-    </div> */}
     </>
   );
 }
